@@ -2,93 +2,87 @@
 
 int main() {
     
-    //AS VARIAVEIS FORAM ORGANIZADOS POR TIPO, DE MANEIRA SIMPLES PARA NÃO GERAR REPETIÇÕES DOS TIPOS.
+    char Estado_1, Codigo_carta_1[5], nome_cidade_1[15];
+    int Populacao_1, Pontos_turisticos_1;
+    float Area_1, PIB_1;
 
-    char Estado[15], Codigo[15], cidade[15];
-    int Populacao, Pontos;
-    float Area, PIB;
-
-    //Nessa parte estou realizando as perguntas de maneira simples e de facil entendimento, para a construção da carta.
-
+    printf("\n");
     printf("Primeira carta: \n");
+    printf("\n");
 
-    printf("Digite o nome do Estado: ");
-    scanf("%s", Estado);
+    printf("Digite a letra inicial do estado [De A à H]: ");
+    scanf(" %c", &Estado_1);
 
-    printf("Digite o código da carta: ");
-    scanf("%s", Codigo);
+    printf("Digite o código da carta [Estado + 01 - ex: A01, A02]: ");
+    scanf("%s", Codigo_carta_1);
 
     printf("Insira o nome da Cidade (Que pertence ao estado escolhido): ");
-    scanf("%s", cidade);
+    scanf("%s", nome_cidade_1);
 
     printf("Digite o número da população: ");
-    scanf("%d", &Populacao);
+    scanf("%d", &Populacao_1);
 
     printf("Digite a área territorial da cidade: ");
-    scanf("%f", &Area);
+    scanf("%f", &Area_1);
 
     printf("Digite o PIB da cidade: ");
-    scanf("%f", &PIB);
+    scanf("%f", &PIB_1);
 
-    printf("Insira quantos pontos turísticos há nessa cidade: ");
-    scanf("%d", &Pontos);
+    printf("Insira quantos pontos turísticos há na cidade: ");
+    scanf("%d", &Pontos_turisticos_1);
 
-    //O "printf("\n")" foi ultilizado para organizar o espaço.
-
-    printf("\n");
-
-    //Aqui iremos imprimir a carta de acordo com as respostas anteriores.
-    
-    printf("Carta 01: \n");
-
-    printf("Estado: %s \n", Estado);
-    printf("Código: %s \n", Codigo);
-    printf("Nome da cidade: %s \n", cidade);
-    printf("População: %d \n", Populacao);
-    printf("Área: %fKm² \n", Area);
-    printf("PIB: %f \n", PIB);
-    printf("Número de Pontos Turísticos: %d \n", Pontos);
+    char Estado_2, Codigo_carta_2[5], nome_cidade_2[15];
+    int Populacao_2, Pontos_turisticos_2;
+    float Area_2, PIB_2;
 
     printf("\n");
-    
-    //Agora realizando a interação para a construção da segunda carta.
-
     printf("Segunda carta: \n");
-
-    printf("Digite o nome do Estado: ");
-    scanf("%s", Estado);
-
-    printf("Digite o código da carta: ");
-    scanf("%s", Codigo);
-
-    printf("Insira o nome da Cidade (Que pertence ao estado escolhido): ");
-    scanf("%s", cidade);
-
-    printf("Digite o número da população: ");
-    scanf("%d", &Populacao);
-
-    printf("Digite a área territorial da cidade: ");
-    scanf("%f", &Area);
-
-    printf("Digite o PIB da cidade: ");
-    scanf("%f", &PIB);
-
-    printf("Insira quantos pontos turísticos há nessa cidade: ");
-    scanf("%d", &Pontos);
-
     printf("\n");
 
-    //E por fim, realizando a impressão da segunda carta.
+    printf("Digite a letra inicial do estado [A à H]: ");
+    scanf(" %c", &Estado_2);
 
+    printf("Digite o código da carta [Estado + 01 - ex: A01, A02]: ");
+    scanf("%s", Codigo_carta_2);
+
+    printf("Insira o nome da Cidade (Que pertence ao estado escolhido): ");
+    scanf("%s", nome_cidade_2);
+
+    printf("Digite o número da população: ");
+    scanf("%d", &Populacao_2);
+
+    printf("Digite a área territorial da cidade: ");
+    scanf("%f", &Area_2);
+
+    printf("Digite o PIB da cidade: ");
+    scanf("%f", &PIB_2);
+
+    printf("Insira quantos pontos turísticos há na cidade: ");
+    scanf("%d", &Pontos_turisticos_2);
+
+    printf("\n");
+    printf("Carta 01: \n");
+    printf("\n");
+
+    printf("Estado: %c\n", Estado_1);
+    printf("Código: %s\n", Codigo_carta_1);
+    printf("Nome da cidade: %s\n", nome_cidade_1);
+    printf("População: %d\n", Populacao_1);
+    printf("Área: %.2fKm²\n", Area_1);
+    printf("PIB: %.2f\n", PIB_1);
+    printf("Número de Pontos Turísticos: %d\n", Pontos_turisticos_1);
+
+    printf("\n");
     printf("Carta 02: \n");
+    printf("\n");
 
-    printf("Estado: %s \n", Estado);
-    printf("Código: %s \n", Codigo);
-    printf("Nome da cidade: %s \n", cidade);
-    printf("População: %d \n", Populacao);
-    printf("Área: %fKm² \n", Area);
-    printf("PIB: %f \n", PIB);
-    printf("Número de Pontos Turísticos: %d \n", Pontos);
+    printf("Estado: %c\n", Estado_2);
+    printf("Código: %s\n", Codigo_carta_2);
+    printf("Nome da cidade: %s\n", nome_cidade_2);
+    printf("População: %d\n", Populacao_2);
+    printf("Área: %.2fKm²\n", Area_2);
+    printf("PIB: %.2f\n", PIB_2);
+    printf("Número de Pontos Turísticos: %d\n", Pontos_turisticos_2);
 
     return 0;
 }
